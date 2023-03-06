@@ -1,0 +1,192 @@
+@import './variabili';
+@import './header';
+@import './footer';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap');
+
+/*--------------------------*/
+/*---------- HERO ----------*/
+/*--------------------------*/
+
+.port-hero {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 5em;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  background: black;
+
+  .port-text-box {
+    justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      font-family: 'Serif6Beta-Regular';
+      font-size: 4rem;
+      color: $dipWhite;
+      margin-bottom: .5em;
+    }
+
+  }
+
+}
+
+
+
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  --container: 112rem;
+  --m-auto: 0 auto;
+  --white: #fff;
+  --white-light: #333;
+  --black: #000;
+  --primary: red;
+  --dark-light: #f1f1f1;
+}
+/* html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+} */
+body {
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: black;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.container-opere {
+  max-width: var(--container);
+  margin: var(--m-auto);
+  padding: 0 1rem;
+}
+.filter-project-items {
+  padding: 1rem 0 3rem 0;
+}
+.filter-project-items::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  text-align: center;
+}
+.filter-btn {
+  padding: 0.8rem 4rem;
+  background: var(--white-light);
+  color: var(--primary);
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.filter-btn.active {
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 0.2rem;
+  transition: all 0.5s ease;
+}
+.filter-project-item {
+  width: 50%;
+  float: left;
+  height: 30rem;
+  text-align: center;
+  background: black;
+  outline: 0.5rem solid #333;
+}
+.filter-project-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -webkit-aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.filter-project-item.show {
+  width: 50%;
+  height: 30rem;
+  padding: 1rem;
+  transition-delay: 0.5s;
+  backface-visibility: visible;
+  visibility: visible;
+}
+.filter-project-item.hide {
+  width: 0%;
+  height: 0;
+  padding: 0;
+  backface-visibility: hidden;
+  visibility: hidden;
+}
+@media (min-width: 900px) {
+  .filter-project-item {
+    width: calc(100% / 3);
+  }
+  .filter-project-item.show {
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 605px) {
+  .filter-menu {
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    flex: calc(50% - 1rem);
+  }
+}
+@media (max-width: 500px) {
+  .filter-project-item {
+    width: 100%;
+  }
+  .filter-project-item.show {
+    width: 100%;
+  }
+}
+
+
+/*------------------------------------*/
+/*---------- CONTATTAMI --------------*/
+/*------------------------------------*/
+
+.area-contatto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(../images/Wrooom.jpg);
+  background-position: center;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    color: $dipWhite;
+  }
+
+  .logo-duo {
+    padding-bottom: 2em;
+  }
+}
+

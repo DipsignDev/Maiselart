@@ -1,0 +1,380 @@
+@import './variabili';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap');
+
+/*--------------------------*/
+/*---------- HERO ----------*/
+/*--------------------------*/
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 .5em;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .hero-text-box {
+    justify-content: center;
+    align-items: flex-end;
+
+    .logo-hero {
+      width: 50%;
+      margin-left: 30%;
+      margin-right: 50%;
+    }
+
+    h2 {
+      font-family: 'Serif6Beta-Regular';
+      font-size: 4rem;
+      color: #000;
+      margin-bottom: .5em;
+
+      span {
+        font-family: 'Serif6Beta-Regular';
+        color: red;
+      }
+    }
+
+    p {
+      font-family: 'Serif6Beta-Regular';
+      font-size: 2rem;
+      color: #000;
+      margin-bottom: 2em;
+
+      span {
+        font-family: 'Serif6Beta-Regular';
+        color: red;
+      }
+    }
+
+  }
+
+  .videobg{
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+
+
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+
+.misvis{
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0.5em;
+  background-color: black;
+
+  .bio-col {
+    padding: 2em 2em;;
+
+    h2 {
+      font-size: 3rem;
+      text-align: left;
+      color: $dipWhite;
+  
+      span {
+        color: red;
+      }
+
+    }
+  
+    .profile-img {
+      width: 100vw;
+    }
+
+  }
+
+}
+
+/*----------------------------------*/
+/*---------- AFORISMA --------------*/
+/*----------------------------------*/
+
+.aforisma {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-family: Indie Flower;
+    color: red;
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+/*----------------------------------*/
+/*---------- PROGETTI --------------*/
+/*----------------------------------*/
+
+.progetti{
+  padding: 1em;
+  counter-reset: bricks;
+  text-align: center;
+  padding-top: 5em;
+  background-color: black;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-top: 2em;
+    color: white;
+  }
+  
+  p {
+    font-size: 1.3em;
+    padding: 1em 1em;
+  }
+
+  .container {
+    display: grid;
+    gap: 1em;
+    width: 100%;
+    height: 45em;
+
+    .box {
+      display: flex;
+      margin: 0;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+      border-radius: 10px;
+      border: 1px solid white;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      transform: scale(1);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+
+@media only screen and (min-width: 620px) {
+
+  .hero {
+    width: 99%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 2em;
+    justify-content: center;
+    align-items: center;
+  
+    .hero-text-box {
+      justify-content: end;
+      align-items: flex-end;
+  
+      h2 {
+        font-size: 6rem;
+        margin-bottom: .5em;
+      }
+
+      p{
+        font-size: 3em;
+      }
+  
+    }
+  
+  
+    .videobg{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  
+  /* BIOGRAFIA */
+
+  .misvis{
+    width: 100%;
+  /*   height: 60vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 2em 0.5em;
+    background-color: black;
+
+    .bio-col {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        font-size: 2rem;
+        text-align: left;
+        color: $dipWhite;
+        
+  
+        span {
+          color: red;
+        }
+      }
+
+        .profile-img {
+          width: 100%;
+        }
+
+    }
+  
+  }
+
+  /* SEZIONE PROGETTI */
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+
+  /* FINE TABLET */
+}
+
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+
+@media only screen and (min-width: 1200px) {
+
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 3em;
+    justify-content: center;
+    align-items: flex-start;
+    /* overflow: hidden; */
+  
+    .hero-text-box {
+      justify-content: end;
+      align-items: flex-end;
+
+      .logo-hero {
+        width: 30%;
+        margin-left: 50%;
+        margin-right: 50%;
+      }
+  
+      h2 {
+        font-family: 'Serif6Beta-Regular';
+        font-size: 6rem;
+        margin-bottom: .5em;
+      }
+  
+    }
+  
+  
+    .videobg{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+    /* BIO BREVE */
+
+    .chisiamo-sez {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4em 0;
+      background-color: $white;
+    
+      h2 {
+        font-family: 'Roboto',sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+      }
+    
+    }
+
+  /* SEZIONE PROGETTI */
+
+  .progetti{
+    padding-top: 2em;
+  
+    h2 {
+      font-size: 5rem;
+      font-weight: 400;
+    }
+    
+    p {
+      font-size: 1.5em;
+      padding: 2em 1em;
+    }
+  
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 200px);
+
+      .box:hover {
+        border-radius: 10px;
+      }
+
+      .box img:hover {
+        transform: scale(0.7);
+      }
+  
+      .due{
+        grid-column: 2 / span 2;
+      }
+      .tre{
+        grid-column: 4 / 4;
+        grid-row: auto / span 3;
+        height: 100%;
+        object-fit: cover;
+      }
+      .quattro{
+        grid-column: 1 / 1;
+        grid-row: auto / span 2;  
+        height: 100%;
+        object-fit: cover;
+      }
+      .cinque {
+        grid-column: 2 / 2;
+        grid-row: 2 / span 2;
+      }
+      .sei{
+        grid-column: 3 / 3;
+        grid-row: auto / span 2;  
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+
+}

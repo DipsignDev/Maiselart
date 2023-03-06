@@ -1,0 +1,138 @@
+@import './variabili';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap');
+
+/*--------------------------*/
+/*---------- BANNER ----------*/
+/*--------------------------*/
+
+.banner-contatti {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/art-gallery-in-a-loft-2021-08-26-15-32-53-utc.jpg);
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+  font-size: 8rem;
+  font-weight: 300;
+  text-align: left;
+  }
+
+}
+
+.sign-t {
+  color: red;
+  -webkit-text-fill-color: red;
+  
+}
+
+/*-----------------------------------*/
+/*---------- FORM CONTATTO ----------*/
+/*-----------------------------------*/
+
+.contatti {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+.contatti-col{
+  flex-basis: 100%;
+  flex-direction: row;
+  padding-top: 4em;
+  margin-bottom: 3em;
+
+  /* div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  } */
+
+  i{
+    font-size: 2rem;
+    color: red;
+    margin: 1em;
+    margin-right: 30px;
+  }
+
+  h5 {
+    font-size: 5rem;
+    margin-bottom: 5px;
+    color: red;
+    font-weight: 400;
+
+    span {
+      -webkit-text-fill-color: red;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: red;
+    font-weight: 400;
+  }
+
+  span p {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: $white;
+    font-weight: 400;
+  }
+
+  p{
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+/*---------------------------*/
+/*---------- MAPPA ----------*/
+/*---------------------------*/
+
+.location{
+  width: 100%;
+  margin: auto;
+  padding: 0;
+
+  iframe{
+    width: 100%;
+  }
+}
+
+input, textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+
+@media only screen and (min-width: 620px) {
+
+  .row {
+    display: flex;
+
+  }
+
+
+  /* FINE TABLET */
+}
+
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+
+/* @media only screen and (min-width: 1200px) {
+  
+
+} */

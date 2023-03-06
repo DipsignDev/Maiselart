@@ -1,0 +1,303 @@
+@import './variabili';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap');
+
+/*--------------------------*/
+/*---------- BANNER ----------*/
+/*--------------------------*/
+
+.banner-top {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/chisiamo.jpg);
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  text-align: left;
+  }
+
+}
+
+.sign-t {
+  color: #e3dfda;
+}
+
+/*--------------------------------------*/
+/*---------- CHI SIAMO ----------*/
+/*--------------------------------------*/
+
+.chisiamo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+
+  p {
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 2em 2em;
+  text-align: left;
+  }
+
+  span {
+  font-weight: 700;
+  }
+
+}
+
+/*--------------------------------------*/
+/*---------- PROCESSO DI LAVORO ----------*/
+/*--------------------------------------*/
+
+.processo {
+  width: 100%;
+/* height: 80vh; */
+  position: relative;
+/* display: flex; */
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 7rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .timeline {
+    max-width: 1800px;
+    margin: 0 auto;
+
+    .container-processo {
+      padding: 1em 2em;
+      position: relative;
+      width: 50%;
+      /* background-color: rgba(0, 0, 0, 0.3); */
+
+      .text-box {
+        padding: 1em 1.2em;
+        background-color: #e3dfda59;
+        border: #282735 3px solid;
+        position: relative;
+        border-radius: 20px;
+        font-size: 1.3rem;
+    
+        h2 {
+          font-size: 3rem;
+          font-weight: bold;
+          padding-bottom: 1rem;
+        }
+    
+        p {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 2.2rem;
+        }
+
+      }
+    
+    }
+
+    .container-processo:nth-child(odd) {
+      border-right: #282735 5px solid;
+      padding-bottom: 11rem;
+      left: 0;
+    }
+    
+    .container-processo:nth-child(even) {
+      margin-left: -5px;
+      border-left: #282735 5px solid;
+      padding-bottom: 11rem;
+      left: 50%;
+    }
+
+    .odd {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: 30px;
+      background-color: transparent;
+      right: -45px;
+      z-index: 2;
+    }
+  
+    .even {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      top: 30px;
+      background-color: transparent;
+      left: -45px;
+      z-index: 2;
+    }
+  
+    .odd-arrow {
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: 28px;
+      z-index: 1;
+      border-top: 15px solidtransparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid #282735;
+      right: -15px;
+    }
+  
+    .even-arrow {
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: 28px;
+      z-index: 1;
+      border-top: 15px solidtransparent;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid #282735;
+      left: -15px;
+    }
+
+
+    
+  }
+
+}
+
+/*-----------------------------------*/
+/*---------- AGGIORNAMENTO ----------*/
+/*-----------------------------------*/
+
+.aggiorna {
+  width: 100%;
+  display: flex;
+  padding: 2em;
+  background-color: #fff;
+  /* color: var(--second-color); */
+  align-items: center;
+  justify-content: center;
+}
+
+.l-column-agg {
+  flex-basis: 40%;
+  padding-left: 8em;
+  padding-bottom: 2em;
+
+  p {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+}
+
+.l-column-agg {
+  width: 100%;
+  display: block;
+}
+
+.r-column-agg {
+  width: 100%;
+  display: block;
+
+  h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7rem;
+    padding-bottom: .5em;
+  }
+  
+  p {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+}
+
+/*-----------------------------*/
+/*---------- CTA --------------*/
+/*-----------------------------*/
+
+.cta {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(../images/banner.jpg);
+  background-position: bottom center;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    color: $dipWhite;
+  }
+
+  .logo-duo {
+    padding-bottom: 2em;
+  }
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+
+/* @media only screen and (min-width: 620px) {
+
+  
+
+
+  FINE TABLET
+} */
+
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+
+@media only screen and (min-width: 1200px) {
+
+  .banner-top {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/chisiamo.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    h1 {
+    font-size: 8rem;
+    font-weight: 300;
+    text-align: left;
+    }
+  
+  }
+  
+  .sign-t {
+    font-family: 'DipsignFont', cursive;
+    color: #e3dfda;
+  }
+
+
+
+/*---------- CTA --------------*/
+
+.cta {
+  h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .logo-duo {
+    width: 18em;
+    padding-bottom: 4em;
+  }
+}
+  
+
+}

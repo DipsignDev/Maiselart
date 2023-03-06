@@ -1,0 +1,2522 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap");
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/*-------------------- NAVIGATION MENU --------------------*/
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.logo {
+  width: 13em;
+}
+
+header {
+  height: 4em;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
+header .menu {
+  padding-right: 40px;
+}
+header nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #282735;
+  align-items: center;
+  height: 100vh;
+  width: 70%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+header nav ul li:hover:active {
+  color: red;
+}
+header nav ul a {
+  color: #e3dfda;
+  padding: 0.75em 2em; /* funziona solo se aggiungo display: block; */
+  display: block;
+  width: 100%;
+}
+header nav .close {
+  float: right;
+  margin: 2em;
+  width: 2em;
+}
+header svg {
+  width: 3em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+header button {
+  background-color: #fff;
+  color: #fff;
+  border: 0;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+/* @media only screen and (min-width: 680px) {
+
+
+} */
+@media only screen and (min-width: 920px) {
+  /* body {
+    margin-left: 10%;
+    margin-right: 10%;
+  } */
+  .menu {
+    display: none;
+  }
+  header nav {
+    transform: translateX(-3em);
+    position: relative;
+    display: flex;
+    /* width: 60%; */
+    height: auto;
+    background: none;
+    justify-content: end;
+  }
+  header nav svg.close {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    margin: 0;
+  }
+  header nav ul a {
+    color: #e3dfda;
+    padding: 1.5em 1em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  header nav ul a:hover {
+    background: none;
+    color: red;
+  }
+  header button {
+    padding: 10px 25px;
+    background-color: #282735;
+    color: #e3dfda;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  header button:hover {
+    background-color: #a69893;
+  }
+}
+/* @media only screen and (min-width: 1200px) {
+
+} */
+/* @media only screen and (min-width: 1920px) {
+
+
+} */
+/*---------- AAA barra menu hover ----------*/
+/* .nav-links ul li::after {
+  content: '';
+  width:  0%;
+  height: .2em;
+  background: var(--second-color);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+} */
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/* @mixin flexCenter($direction, $backgroundColor, $height) {
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background-color: $backgroundColor;
+} */
+/*----------------------------------*/
+/*---------- FOOTER ----------------*/
+/*----------------------------------*/
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 2em;
+  align-items: center;
+  background: black;
+  /* .footer-col-r {
+    display: none;
+  } */
+}
+.footer h4 {
+  font-family: "DipsignFont", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+}
+.footer .footer-col {
+  flex-basis: 50%;
+  padding: 0 1em;
+  text-align: left;
+}
+.footer p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  padding: 1em;
+  color: #e3dfda;
+}
+.footer p i {
+  font-size: 1.5rem;
+  color: red;
+}
+.footer a {
+  text-decoration: none;
+  color: red;
+}
+.footer .icons {
+  padding-left: 1em;
+  color: red;
+}
+.footer .icons i {
+  font-size: 2.5rem;
+}
+.footer .copyright {
+  height: 2em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+}
+.footer .copy-dip {
+  font-family: "DipsignFont", cursive;
+  text-decoration: none;
+  color: #e3dfda;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* DESCKTOP */
+@media only screen and (min-width: 1200px) {
+  /* FOOTER */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: black;
+  }
+  .footer .footer-col {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+  }
+  .footer .footer-col h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e3dfda;
+    padding-top: 0.5em;
+    padding-right: 2em;
+  }
+  .footer .footer-col .link-menu {
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0.2em;
+    border-radius: 0 15px 0 15px;
+    border-left: 2px #a69893 solid;
+    border-bottom: 2px #a69893 solid;
+  }
+  .footer .footer-col .link-menu:hover {
+    background-color: red;
+    color: #282735;
+    transition: 0.5s;
+  }
+  .footer .icons .fa {
+    padding-left: 1em;
+    color: red;
+  }
+  .copyright {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright p {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #e3dfda;
+  }
+  .copyright p i {
+    color: #a69893;
+  }
+  .copyright p .copy-dip {
+    font-family: "DipsignFont", cursive;
+    text-decoration: none;
+    color: #a69893;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/*--------------------------*/
+/*---------- HERO ----------*/
+/*--------------------------*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 0.5em;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero .hero-text-box {
+  justify-content: center;
+  align-items: flex-end;
+}
+.hero .hero-text-box .logo-hero {
+  width: 50%;
+  margin-left: 30%;
+  margin-right: 50%;
+}
+.hero .hero-text-box h2 {
+  font-family: "Serif6Beta-Regular";
+  font-size: 4rem;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+.hero .hero-text-box h2 span {
+  font-family: "Serif6Beta-Regular";
+  color: red;
+}
+.hero .hero-text-box p {
+  font-family: "Serif6Beta-Regular";
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 2em;
+}
+.hero .hero-text-box p span {
+  font-family: "Serif6Beta-Regular";
+  color: red;
+}
+.hero .videobg {
+  height: 100%;
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+.misvis {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0.5em;
+  background-color: black;
+}
+.misvis .bio-col {
+  padding: 2em 2em;
+}
+.misvis .bio-col h2 {
+  font-size: 3rem;
+  text-align: left;
+  color: #e3dfda;
+}
+.misvis .bio-col h2 span {
+  color: red;
+}
+.misvis .bio-col .profile-img {
+  width: 100vw;
+}
+
+/*----------------------------------*/
+/*---------- AFORISMA --------------*/
+/*----------------------------------*/
+.aforisma {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+}
+.aforisma h3 {
+  font-family: Indie Flower;
+  color: red;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/*----------------------------------*/
+/*---------- PROGETTI --------------*/
+/*----------------------------------*/
+.progetti {
+  padding: 1em;
+  counter-reset: bricks;
+  text-align: center;
+  padding-top: 5em;
+  background-color: black;
+}
+.progetti h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 2em;
+  color: white;
+}
+.progetti p {
+  font-size: 1.3em;
+  padding: 1em 1em;
+}
+.progetti .container {
+  display: grid;
+  gap: 1em;
+  width: 100%;
+  height: 45em;
+}
+.progetti .container .box {
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.progetti .container img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+@media only screen and (min-width: 620px) {
+  .hero {
+    width: 99%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 2em;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-text-box {
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .hero .hero-text-box h2 {
+    font-size: 6rem;
+    margin-bottom: 0.5em;
+  }
+  .hero .hero-text-box p {
+    font-size: 3em;
+  }
+  .hero .videobg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  /* BIOGRAFIA */
+  .misvis {
+    width: 100%;
+    /*   height: 60vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 2em 0.5em;
+    background-color: black;
+  }
+  .misvis .bio-col {
+    display: flex;
+    align-items: center;
+  }
+  .misvis .bio-col h2 {
+    font-size: 2rem;
+    text-align: left;
+    color: #e3dfda;
+  }
+  .misvis .bio-col h2 span {
+    color: red;
+  }
+  .misvis .bio-col .profile-img {
+    width: 100%;
+  }
+  /* SEZIONE PROGETTI */
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  /* FINE TABLET */
+}
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+@media only screen and (min-width: 1200px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 3em;
+    justify-content: center;
+    align-items: flex-start;
+    /* overflow: hidden; */
+  }
+  .hero .hero-text-box {
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .hero .hero-text-box .logo-hero {
+    width: 30%;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .hero .hero-text-box h2 {
+    font-family: "Serif6Beta-Regular";
+    font-size: 6rem;
+    margin-bottom: 0.5em;
+  }
+  .hero .videobg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  /* BIO BREVE */
+  .chisiamo-sez {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
+    background-color: #fff;
+  }
+  .chisiamo-sez h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  /* SEZIONE PROGETTI */
+  .progetti {
+    padding-top: 2em;
+  }
+  .progetti h2 {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  .progetti p {
+    font-size: 1.5em;
+    padding: 2em 1em;
+  }
+  .progetti .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+  }
+  .progetti .container .box:hover {
+    border-radius: 10px;
+  }
+  .progetti .container .box img:hover {
+    transform: scale(0.7);
+  }
+  .progetti .container .due {
+    grid-column: 2/span 2;
+  }
+  .progetti .container .tre {
+    grid-column: 4/4;
+    grid-row: auto/span 3;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .progetti .container .quattro {
+    grid-column: 1/1;
+    grid-row: auto/span 2;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .progetti .container .cinque {
+    grid-column: 2/2;
+    grid-row: 2/span 2;
+  }
+  .progetti .container .sei {
+    grid-column: 3/3;
+    grid-row: auto/span 2;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/*--------------------------*/
+/*---------- HERO ----------*/
+/*--------------------------*/
+.bio-hero {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 0.5em;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+}
+.bio-hero .bio-text-box {
+  justify-content: center;
+  align-items: flex-end;
+}
+.bio-hero .bio-text-box h2 {
+  font-family: "Serif6Beta-Regular";
+  font-size: 4rem;
+  color: #e3dfda;
+  margin-bottom: 0.5em;
+}
+
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+.bio {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0.5em;
+  background-color: black;
+}
+.bio .bio-col {
+  padding: 2em 2em;
+}
+.bio .bio-col p {
+  font-size: 1.3rem;
+  text-align: left;
+  color: #e3dfda;
+}
+.bio .bio-col p span {
+  color: red;
+}
+.bio .bio-col .profile-img {
+  width: 80vw;
+}
+
+/*------------------------------------*/
+/*---------- CONTATTAMI --------------*/
+/*------------------------------------*/
+.area-contatto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/Wrooom.jpg);
+  background-position: center;
+}
+.area-contatto h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  color: #e3dfda;
+}
+.area-contatto .logo-duo {
+  padding-bottom: 2em;
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+@media only screen and (min-width: 620px) {
+  .bio-hero {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 2em;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .bio-hero .bio-text-box {
+    justify-content: end;
+  }
+  .bio-hero .bio-text-box h2 {
+    font-size: 6rem;
+  }
+  /* FINE TABLET */
+}
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+@media only screen and (min-width: 1200px) {
+  .bio-hero {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 3em;
+    justify-content: center;
+    align-items: flex-start;
+    /* overflow: hidden; */
+  }
+  .bio-hero .bio-text-box {
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .bio-hero .bio-text-box h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 6rem;
+    color: #e3dfda;
+    margin-bottom: 0.5em;
+  }
+  /* BIO BREVE */
+  .bio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 2em 0.5em;
+    background-color: black;
+  }
+  .bio .bio-col {
+    flex-basis: 50%;
+  }
+  .bio .bio-col p {
+    font-size: 2rem;
+    text-align: left;
+    color: #e3dfda;
+  }
+  .bio .bio-col p span {
+    color: red;
+  }
+  .bio .bio-col .profile-img {
+    width: 100%;
+  }
+  /*---------- CTA --------------*/
+  .area-contatto {
+    padding: 4em 0;
+  }
+  .area-contatto h2 {
+    font-size: 5rem;
+  }
+  .area-contatto .logo-duo {
+    width: 18em;
+    padding-bottom: 4em;
+  }
+}
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/*-------------------- NAVIGATION MENU --------------------*/
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.logo {
+  width: 13em;
+}
+
+header {
+  height: 4em;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
+header .menu {
+  padding-right: 40px;
+}
+header nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #282735;
+  align-items: center;
+  height: 100vh;
+  width: 70%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+header nav ul li:hover:active {
+  color: red;
+}
+header nav ul a {
+  color: #e3dfda;
+  padding: 0.75em 2em; /* funziona solo se aggiungo display: block; */
+  display: block;
+  width: 100%;
+}
+header nav .close {
+  float: right;
+  margin: 2em;
+  width: 2em;
+}
+header svg {
+  width: 3em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+header button {
+  background-color: #fff;
+  color: #fff;
+  border: 0;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+/* @media only screen and (min-width: 680px) {
+
+
+} */
+@media only screen and (min-width: 920px) {
+  /* body {
+    margin-left: 10%;
+    margin-right: 10%;
+  } */
+  .menu {
+    display: none;
+  }
+  header nav {
+    transform: translateX(-3em);
+    position: relative;
+    display: flex;
+    /* width: 60%; */
+    height: auto;
+    background: none;
+    justify-content: end;
+  }
+  header nav svg.close {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    margin: 0;
+  }
+  header nav ul a {
+    color: #e3dfda;
+    padding: 1.5em 1em;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  header nav ul a:hover {
+    background: none;
+    color: red;
+  }
+  header button {
+    padding: 10px 25px;
+    background-color: #282735;
+    color: #e3dfda;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  header button:hover {
+    background-color: #a69893;
+  }
+}
+/* @media only screen and (min-width: 1200px) {
+
+} */
+/* @media only screen and (min-width: 1920px) {
+
+
+} */
+/*---------- AAA barra menu hover ----------*/
+/* .nav-links ul li::after {
+  content: '';
+  width:  0%;
+  height: .2em;
+  background: var(--second-color);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+} */
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/* @mixin flexCenter($direction, $backgroundColor, $height) {
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background-color: $backgroundColor;
+} */
+/*----------------------------------*/
+/*---------- FOOTER ----------------*/
+/*----------------------------------*/
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 2em;
+  align-items: center;
+  background: black;
+  /* .footer-col-r {
+    display: none;
+  } */
+}
+.footer h4 {
+  font-family: "DipsignFont", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+}
+.footer .footer-col {
+  flex-basis: 50%;
+  padding: 0 1em;
+  text-align: left;
+}
+.footer p {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  padding: 1em;
+  color: #e3dfda;
+}
+.footer p i {
+  font-size: 1.5rem;
+  color: red;
+}
+.footer a {
+  text-decoration: none;
+  color: red;
+}
+.footer .icons {
+  padding-left: 1em;
+  color: red;
+}
+.footer .icons i {
+  font-size: 2.5rem;
+}
+.footer .copyright {
+  height: 2em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+}
+.footer .copy-dip {
+  font-family: "DipsignFont", cursive;
+  text-decoration: none;
+  color: #e3dfda;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* DESCKTOP */
+@media only screen and (min-width: 1200px) {
+  /* FOOTER */
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: black;
+  }
+  .footer .footer-col {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+  }
+  .footer .footer-col h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e3dfda;
+    padding-top: 0.5em;
+    padding-right: 2em;
+  }
+  .footer .footer-col .link-menu {
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0.2em;
+    border-radius: 0 15px 0 15px;
+    border-left: 2px #a69893 solid;
+    border-bottom: 2px #a69893 solid;
+  }
+  .footer .footer-col .link-menu:hover {
+    background-color: red;
+    color: #282735;
+    transition: 0.5s;
+  }
+  .footer .icons .fa {
+    padding-left: 1em;
+    color: red;
+  }
+  .copyright {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright p {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #e3dfda;
+  }
+  .copyright p i {
+    color: #a69893;
+  }
+  .copyright p .copy-dip {
+    font-family: "DipsignFont", cursive;
+    text-decoration: none;
+    color: #a69893;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+/*--------------------------*/
+/*---------- HERO ----------*/
+/*--------------------------*/
+.port-hero {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 5em;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  background: black;
+}
+.port-hero .port-text-box {
+  justify-content: center;
+  align-items: flex-start;
+}
+.port-hero .port-text-box h2 {
+  font-family: "Serif6Beta-Regular";
+  font-size: 4rem;
+  color: #e3dfda;
+  margin-bottom: 0.5em;
+}
+
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --container: 112rem;
+  --m-auto: 0 auto;
+  --white: #fff;
+  --white-light: #333;
+  --black: #000;
+  --primary: red;
+  --dark-light: #f1f1f1;
+}
+
+/* html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+} */
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  background: black;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.container-opere {
+  max-width: var(--container);
+  margin: var(--m-auto);
+  padding: 0 1rem;
+}
+
+.filter-project-items {
+  padding: 1rem 0 3rem 0;
+}
+
+.filter-project-items::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 0.8rem 4rem;
+  background: var(--white-light);
+  color: var(--primary);
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 0.2rem;
+  transition: all 0.5s ease;
+}
+
+.filter-project-item {
+  width: 50%;
+  float: left;
+  height: 30rem;
+  text-align: center;
+  background: black;
+  outline: 0.5rem solid #333;
+}
+
+.filter-project-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  -webkit-aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.filter-project-item.show {
+  width: 50%;
+  height: 30rem;
+  padding: 1rem;
+  transition-delay: 0.5s;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  visibility: visible;
+}
+
+.filter-project-item.hide {
+  width: 0%;
+  height: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  visibility: hidden;
+}
+
+@media (min-width: 900px) {
+  .filter-project-item {
+    width: 33.3333333333%;
+  }
+  .filter-project-item.show {
+    width: 33.3333333333%;
+  }
+}
+@media (max-width: 605px) {
+  .filter-menu {
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    flex: calc(50% - 1rem);
+  }
+}
+@media (max-width: 500px) {
+  .filter-project-item {
+    width: 100%;
+  }
+  .filter-project-item.show {
+    width: 100%;
+  }
+}
+/*------------------------------------*/
+/*---------- CONTATTAMI --------------*/
+/*------------------------------------*/
+.area-contatto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/Wrooom.jpg);
+  background-position: center;
+}
+.area-contatto h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  color: #e3dfda;
+}
+.area-contatto .logo-duo {
+  padding-bottom: 2em;
+}
+
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+.progetto {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0.5em;
+  background-color: black;
+}
+.progetto .prog-col {
+  padding: 2em 2em;
+}
+.progetto .prog-col h2 {
+  font-size: 4rem;
+  color: #e3dfda;
+}
+.progetto .prog-col p {
+  font-size: 1.3rem;
+  text-align: left;
+  color: #e3dfda;
+}
+.progetto .prog-col p span {
+  color: red;
+}
+.progetto .prog-col .prog-img {
+  width: 80vw;
+}
+
+/*------------------------------------*/
+/*---------- CONTATTAMI --------------*/
+/*------------------------------------*/
+.area-contatto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/Wrooom.jpg);
+  background-position: center;
+}
+.area-contatto h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  color: #e3dfda;
+}
+.area-contatto .logo-duo {
+  padding-bottom: 2em;
+}
+
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+@media only screen and (min-width: 1200px) {
+  /* BIO BREVE */
+  .progetto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    padding: 2em 0.5em;
+    background-color: black;
+  }
+  .progetto .prog-col {
+    flex-basis: 50%;
+  }
+  .progetto .prog-col h2 {
+    font-size: 6rem;
+    color: #e3dfda;
+  }
+  .progetto .prog-col p {
+    font-size: 2rem;
+    text-align: left;
+    color: #e3dfda;
+  }
+  .progetto .prog-col p span {
+    color: red;
+  }
+  .progetto .prog-col .prog-img {
+    width: 100%;
+  }
+  /*---------- CTA --------------*/
+  .area-contatto {
+    padding: 4em 0;
+  }
+  .area-contatto h2 {
+    font-size: 5rem;
+  }
+  .area-contatto .logo-duo {
+    width: 18em;
+    padding-bottom: 4em;
+  }
+}
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+/*--------------------------*/
+/*---------- BANNER ----------*/
+/*--------------------------*/
+.banner-contatti {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/art-gallery-in-a-loft-2021-08-26-15-32-53-utc.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner-contatti h1 {
+  font-size: 8rem;
+  font-weight: 300;
+  text-align: left;
+}
+
+.sign-t {
+  color: red;
+  -webkit-text-fill-color: red;
+}
+
+/*-----------------------------------*/
+/*---------- FORM CONTATTO ----------*/
+/*-----------------------------------*/
+.contatti {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+
+.contatti-col {
+  flex-basis: 100%;
+  flex-direction: row;
+  padding-top: 4em;
+  margin-bottom: 3em;
+  /* div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  } */
+}
+.contatti-col i {
+  font-size: 2rem;
+  color: red;
+  margin: 1em;
+  margin-right: 30px;
+}
+.contatti-col h5 {
+  font-size: 5rem;
+  margin-bottom: 5px;
+  color: red;
+  font-weight: 400;
+}
+.contatti-col h5 span {
+  -webkit-text-fill-color: red;
+}
+.contatti-col h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: red;
+  font-weight: 400;
+}
+.contatti-col span p {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 400;
+}
+.contatti-col p {
+  font-size: 1rem;
+  padding: 0;
+}
+
+/*---------------------------*/
+/*---------- MAPPA ----------*/
+/*---------------------------*/
+.location {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+.location iframe {
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+@media only screen and (min-width: 620px) {
+  .row {
+    display: flex;
+  }
+  /* FINE TABLET */
+}
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+/* @media only screen and (min-width: 1200px) {
+
+
+} */
+@font-face {
+  font-family: "Serif6Beta-Regular";
+  src: url(../fonts/Serif6Beta-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Serif6Beta-Regular";
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: black; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Serif6Beta-Regular";
+}
+
+p {
+  font-family: "Serif6Beta-Regular";
+}
+
+.dip {
+  font-family: "Serif6Beta-Regular";
+  color: #a69893;
+}
+
+.sign {
+  font-family: "Serif6Beta-Bold";
+  color: #282735;
+}
+
+.light-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #e3dfda;
+  border: 2px solid #e3dfda;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.light-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.dark-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  border: 2px solid red;
+  padding: 15px 34px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.dark-btn:hover {
+  border: 2px solid red;
+  color: white;
+  background: red;
+  transition: 0.5s;
+}
+
+.outline-text {
+  font-family: "Serif6Beta-Regular";
+  font-weight: 100;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.red {
+  color: red;
+}
+
+@media only screen and (min-width: 620px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .light-btn {
+    font-size: 20px;
+  }
+}
+.art-gallery {
+  width: 80%;
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+/* @media only screen and (min-width: 620px) {
+
+
+
+
+  FINE TABLET
+} */
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+@media only screen and (min-width: 1200px) {
+  /*---------- ARTICOLI --------------*/
+  .art-gallery {
+    width: 90%;
+    padding: 2em 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+  }
+  .art-gallery img {
+    width: 100%;
+  }
+  /*---------- CTA --------------*/
+  .cta h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .cta .logo-duo {
+    width: 18em;
+    padding-bottom: 4em;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=style.css.map */

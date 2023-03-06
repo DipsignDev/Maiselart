@@ -1,0 +1,70 @@
+@import './variabili';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap');
+
+
+
+.art-gallery {
+  width: 80%
+}
+
+
+
+
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+
+/* @media only screen and (min-width: 620px) {
+
+  
+
+
+  FINE TABLET
+} */
+
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+
+@media only screen and (min-width: 1200px) {
+
+
+
+/*---------- ARTICOLI --------------*/
+
+.art-gallery {
+  width: 90%;
+  padding: 2em 5%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 30px;
+
+  img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/*---------- CTA --------------*/
+
+.cta {
+  h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .logo-duo {
+    width: 18em;
+    padding-bottom: 4em;
+  }
+}
+  
+
+}

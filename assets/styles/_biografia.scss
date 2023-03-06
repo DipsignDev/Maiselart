@@ -1,0 +1,211 @@
+@import './variabili';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto&display=swap');
+
+/*--------------------------*/
+/*---------- HERO ----------*/
+/*--------------------------*/
+
+.bio-hero {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 .5em;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: black;
+
+  .bio-text-box {
+    justify-content: center;
+    align-items: flex-end;
+
+    h2 {
+      font-family: 'Serif6Beta-Regular';
+      font-size: 4rem;
+      color: $dipWhite;
+      margin-bottom: .5em;
+    }
+
+  }
+
+}
+
+
+
+/*--------------------------------------*/
+/*---------- BIOGRAFIA ----------*/
+/*--------------------------------------*/
+
+.bio{
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0.5em;
+  background-color: black;
+
+  .bio-col {
+    padding: 2em 2em;;
+
+    p {
+      font-size: 1.3rem;
+      text-align: left;
+      color: $dipWhite;
+  
+      span {
+        color: red;
+      }
+
+    }
+  
+    .profile-img {
+      width: 80vw;
+    }
+
+  }
+
+}
+
+/*------------------------------------*/
+/*---------- CONTATTAMI --------------*/
+/*------------------------------------*/
+
+.area-contatto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  background-image: radial-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)), url(../images/Wrooom.jpg);
+  background-position: center;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    color: $dipWhite;
+  }
+
+  .logo-duo {
+    padding-bottom: 2em;
+  }
+}
+
+/*----------------------------------------------- ------------- */
+/*--------------------------  TABLET ------------- -------------*/
+/*----------------------------------------------- ------------- */
+
+@media only screen and (min-width: 620px) {
+
+  .bio-hero {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 2em;
+    justify-content: center;
+    align-items: flex-start;
+  
+    .bio-text-box {
+      justify-content: end;
+  
+      h2 {
+        font-size: 6rem;
+      }
+  
+    }
+  }
+
+  /* FINE TABLET */
+}
+
+/*----------------------------------------------- ---------------*/
+/*---------------------- ---- DESKTOP -------------- ------------*/
+/*----------------------------------------------- ------------- -*/
+
+@media only screen and (min-width: 1200px) {
+
+  .bio-hero {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 3em;
+    justify-content: center;
+    align-items: flex-start;
+    /* overflow: hidden; */
+  
+    .bio-text-box {
+      justify-content: end;
+      align-items: flex-end;
+  
+      h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 6rem;
+        color: $dipWhite;
+        margin-bottom: .5em;
+      }
+  
+    }
+  
+  }
+
+    /* BIO BREVE */
+
+    .bio{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: relative;
+      padding: 2em 0.5em;
+      background-color: black;
+  
+      .bio-col {
+        flex-basis: 50%;
+  
+        p {
+          font-size: 2rem;
+          text-align: left;
+          color: $dipWhite;
+          
+    
+          span {
+            color: red;
+          }
+        }
+  
+          .profile-img {
+            width: 100%;
+          }
+  
+      }
+    
+    }
+
+/*---------- CTA --------------*/
+
+.area-contatto {
+
+  padding: 4em 0;
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  .logo-duo {
+    width: 18em;
+    padding-bottom: 4em;
+  }
+}
+
+}
